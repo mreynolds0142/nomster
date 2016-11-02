@@ -87,6 +87,6 @@ test:
 production:
   <<: *default
   database: nomster_production
-  username: nomster
+  username: postgres
   password: password
   host: localhost
