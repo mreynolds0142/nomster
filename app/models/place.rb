@@ -1,6 +1,8 @@
 class Place < ActiveRecord::Base
   belongs_to :user
   has_many :comments
+  belongs_to :photo
+  
   geocoded_by :address
   after_validation :geocode
 
